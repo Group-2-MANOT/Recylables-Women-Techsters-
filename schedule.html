@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+font-family: 'Raleway', sans-serif;
+font-weight: 400;
+color:black;
+letter-spacing: 1px;
+}
+.container {
+background-color: #fafafa;
+margin: 200px;
+box-shadow: 10px 15px 20px rgba(0, 0, 0, .1);
+display: grid;
+grid-template-columns: 40% 60%;
+}
+.container-time {
+background-color: rgb(225, 243, 250);
+padding: 50px;
+outline: 3px dashed rgb(8, 91, 124);
+outline-offset: -30px;
+text-align: center;
+}
+.heading {
+font-size: 35px;
+text-transform: uppercase;
+}
+
+.heading-days {
+color:black;
+font-size: 30px;
+
+}
+
+.heading-phone {
+font-size: 20px;
+}
+.container-form {
+padding: 20px 0;
+margin: 0 auto;
+color: #000;
+}
+form {
+display: grid;
+grid-row-gap: 20px;
+}
+form p {
+font-weight: 600;
+}
+.form-field {
+display: flex;
+justify-content: space-between;
+}
+
+input,select {
+padding: 10px 15px;
+}
+.btn {
+background-color: rgb(27, 167, 223);
+color: #fff;
+padding: 10px 20px;
+border: none;
+font-size: 18px;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+-ms-border-radius: 100px;
+-o-border-radius: 100px;
+box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+cursor: pointer;
+transition: all .3s;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+-ms-transition: all .3s;
+-o-transition: all .3s;
+}
+
+.btn:hover {
+transform: scale(1.03);
+-webkit-transform: scale(1.03);
+-moz-transform: scale(1.03);
+-ms-transform: scale(1.03);
+-o-transform: scale(1.03);
+box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+  </style>
+  <title>Schedule</title>
+</head>
+<body>
+  <div class="container">
+    <div class="container-time">
+    <h2 class="heading">Time Open</h2>
+    <h3 class="heading-days">Monday-Friday</h3>
+    <p>7am - 6pm </p>
+    
+    
+    <h3 class="heading-days">Saturday and sunday</h3>
+    <p>9am - 3pm </p>
+    
+    
+    <hr>
+    
+    <h4 class="heading-phone">Call Us: (234) 81-455-456</h4>
+    </div>
+    
+    <div class="container-form">
+    <form action="#">
+    <h2 class="heading heading-yellow">Pick up booking</h2>
+    <div class="form-field">
+      <p>Your Name</p>
+      <input type="text" placeholder="Your Name">
+      </div>
+      <div class="form-field">
+      <p>Your email</p>
+      <input type="email" placeholder="Your email">
+      </div>
+      <div class="form-field">
+      <p>Date</p>
+      <input type="date">
+      </div>
+      <div class="form-field">
+      <p>Time</p>
+      <input type="time">
+      </div>
+      <div class="form-field">
+      <p>Quantity</p>
+      <select name="select" id="#">
+      <option value="1">50</option>
+      <option value="2">100</option>
+      <option value="3">500</option>
+      <option value="4">1000</option>
+      
+</select>
+</div>
+
+<button class="btn">Submit</button>
+</form>
+</div>
+</div>
+</body>
+</html>
+      
